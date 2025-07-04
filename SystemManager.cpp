@@ -81,7 +81,7 @@ BOOL SystemManager::InitInstance(int nCmdShow)
     {
         int btnId = (ID_BUTTON * (i + 1));
         HWND hWndButton = CreateWindowEx(
-            0, TEXT("BUTTON"), TEXT("ƒ{ƒ^ƒ“"),
+            0, TEXT("BUTTON"), csvInfoList[i].appName.c_str(),
             WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
             200 * (i + 1), 300, // X-coordinate, Y-coordinate 
             100, 100, // Width, Height
